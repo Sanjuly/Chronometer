@@ -1,0 +1,141 @@
+:root {
+    --bg-color: #121f3d;
+    --bg-color-g: #383839;
+    --bg-color-w: white;
+    --bg-color-green: #97C93E;
+    --bg-color-y:rgb(242,255,0);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    display: grid;
+    grid-template-rows: 15vh 1fr 5vh;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+li {
+    list-style: none;
+}
+button {
+    cursor: pointer;
+}
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    color: var(--bg-color-w);
+    background-color: #383839;
+    border-bottom: 1px solid var(--bg-color-green);
+}
+header h1 {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-left: 40px;
+    font-size: 60px;
+    color: var(--bg-color-green);
+}
+.header--paragraph {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 1.6rem;
+}
+.header--paragraph p {
+    padding-right: 20px;
+}
+.header--paragraph p:hover {
+    cursor: pointer;
+    color: var(--bg-color-green);
+}
+main {
+    display: grid;
+    grid-template-columns: 9% 91%;
+    color: var(--bg-color-green);
+    background-color: black;
+}
+.main--nav {
+    grid-column: 1 / 2;
+    background-color: #383839;
+}
+.main--button {
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #8f8f92;
+    color: var(--bg-color-w);
+}
+.main--button:hover {
+    color: black;
+    background-color: var(--bg-color-green);
+}
+.main--button p {
+    font-size: 1.6rem;
+    padding: 10px;
+}
+.hero {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    place-content: center;    
+}
+.hero--title {
+    font-size: 15rem;
+}
+span {
+    font-size: 15.8rem;
+    font-family: 'clockicons',sans-serif;
+}
+.hero--button1,
+.hero--button2,
+.hero--button3,
+input {
+    width: 190px;
+    height: 80px;
+    padding: 10px;
+    font-size: 3rem;
+    color: var(--bg-color-y);
+    background-color: transparent;
+    margin: 10px 10px 0 0;
+    border-radius: 5px;
+    border: 2px solid var(--bg-color-g);
+}
+.hero--button1:hover {
+    color: black;
+    background-color: var(--bg-color-y);
+}
+.hero--button2:hover {
+    color: black;
+    background-color: red;
+}
+.hero--button3:hover {
+    color: black;
+    background-color: blue;
+}
+.hero-time {
+    padding: 20px;
+}
+form {
+    display: flex;
+}
+footer {
+    width: 100%;
+    display: flex;
+    justify-content:right;
+    place-items: center;
+    background-color: #383839;
+    font-size: 1.5rem;
+    padding-right: 20px;
+    color: var(--bg-color-w);
+}
