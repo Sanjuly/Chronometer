@@ -1,2 +1,3 @@
 # Chronometer
-Proyecto Challenger Platzi 
+Proyecto Challenge Platzi 
+Manipulación del DOM.
